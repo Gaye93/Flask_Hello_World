@@ -39,6 +39,18 @@ def sommes(valeurs):
     total = sum(nombres)
     # Afficher la somme
     return f"<h2>La somme de vos valeurs est : {total}</h2>"
+  
+@app.route('/max/<path:valeurs>')
+def valeur_maximale(valeurs):
+    # Séparer les valeurs par des barres obliques et les convertir en une liste d'entiers
+    nombres = list(map(int, valeurs.split('/')))
+    # Trouver la valeur maximale en utilisant une boucle
+    max_valeur = nombres[0]  # Initialiser la première valeur comme maximale
+    for nombre in nombres:
+        if nombre > max_valeur:
+            max_valeur = nombre  # Si on trouve une valeur plus grande, on la met à jour
+    # Afficher la valeur maximale
+    return f"<h2>La valeur la plus importante est : {max_valeur}</h2>"
                                                                                                                
 if __name__ == "__main__":
   app.run(debug=True)
