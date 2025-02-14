@@ -16,6 +16,10 @@ def exercices():
 @app.route("/contact/")
 def MaPremiereAPI():
     return render_template('contact.html')
+
+@app.route("/cnam/")
+def cnam():
+    return render_template('cnam.html')
   
 @app.route("/cv/")
 def monCV():
