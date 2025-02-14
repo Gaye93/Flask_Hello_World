@@ -28,7 +28,12 @@ def monCV():
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
     return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
-  
+
+@app.route('/calcul_somme/<int:valeur1>/<int:valeur2>')
+def calcul_somme(valeur1, valeur2):
+    total = valeur1 + valeur2
+    return f"<h2>La somme de vos valeurs est: {total}</h2>"
+
 @app.route('/somme/<int:valeur1>/<int:valeur2>')
 def somme(valeur1, valeur2):
     total = valeur1 + valeur2
