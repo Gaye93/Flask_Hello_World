@@ -30,6 +30,15 @@ def somme(valeur1, valeur2):
         resultat = "impair"
     
     return f"<h2>La somme de vos valeurs est : {total}</h2><p>Ce nombre est {resultat}.</p>"
+
+@app.route('/sommes/<path:valeurs>')
+def sommes(valeurs):
+    # Séparer les valeurs par des barres obliques et les convertir en une liste d'entiers
+    nombres = list(map(int, valeurs.split('/')))
+    # Calculer la somme des nombres
+    total = sum(nombres)
+    # Afficher la somme
+    return f"<h2>La somme de vos valeurs est : {total}</h2>"
                                                                                                                
 if __name__ == "__main__":
   app.run(debug=True)
