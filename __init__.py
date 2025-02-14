@@ -18,7 +18,7 @@ def MaPremiereAPI():
     return render_template('contact.html')
   
 @app.route("/cv/")
-def MaPremiereAPI():
+def monCV():
     return render_template('cv.html')
   
 @app.route('/calcul_carre/<int:val_user>')
