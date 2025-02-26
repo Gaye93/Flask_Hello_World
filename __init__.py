@@ -17,6 +17,10 @@ def exercices():
 def MaPremiereAPI():
     return render_template('contact.html')
 
+@app.route("/exercice_base1/")
+def exo1():
+    return render_template('1_Liste_Base.html')
+
 @app.route("/cnam/")
 def cnam():
     return render_template('cnam.html')
@@ -24,6 +28,7 @@ def cnam():
 @app.route("/cv/")
 def monCV():
     return render_template('cv.html')
+  
   
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
