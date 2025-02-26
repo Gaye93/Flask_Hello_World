@@ -21,6 +21,10 @@ def MaPremiereAPI():
 def exo1():
     return render_template('1_Liste_Base.html')
 
+@app.route("/exercice_base2/")
+def exo2():
+    return render_template('exercice2.html')
+
 @app.route("/cnam/")
 def cnam():
     return render_template('cnam.html')
