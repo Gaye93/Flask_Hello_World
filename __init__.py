@@ -29,6 +29,10 @@ def exo2():
 def exo3():
     return render_template('exercice3.html')
 
+@app.route("/formulaire/")
+def form():
+    return render_template('formulaire.html')
+
 @app.route("/cnam/")
 def cnam():
     return render_template('cnam.html')
