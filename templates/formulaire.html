@@ -1,41 +1,32 @@
-﻿<html>
+<html>
 <head>
-
-
+	<meta charset="UTF-8"/>
+	<title>Formulaire HTML</title>
 </head>
 <body>
 	<h1>Dresseur de Pokemon</h1>
 
+	<p>Les champs marqués d'une * sont obligatoires.</p>
+
 <form action="#">
 <fieldset>
-<legend>Votre Nom et Prénom</legend>
-<p>Nom : <input name="A" type="Text" value="Nom ?"/></p>
-<p>Prénom : <input name="B" type="Text" value="Prénom ?"/></p>
-</fieldset>
-<p>Mr <input name="C" type="radio" value="Mr"/> 
-Mme<input name="C" type="radio" value="Mme"/></p>
-<p>
-Chien <input name="D" type="checkbox" value="Chien"/>
-Chat <input name="E" type="checkbox" value="Chat"/>
-Poisson <input name="F" type="checkbox" value="Poisson"/>
+<legend>Nouveau dresseur</legend>
+<p>Nom* : <input name="A" type="Text" required/></p>
+<p>Description<br>
+	<textarea rows="3" cols="30	" name="H"></textarea>
 </p>
-<p>
-<select name="G" multiple>
-	<option>Pain</option>
-	<option>Citron</option>
-	<option>Orange</option>
-</select>
-</p>
-<p>
-<textarea rows="3" cols="30	" name="H">
-Laisez nous un commentaire
-</textarea>
 
+<p>Equipe <br>
+<input name="C" type="radio" value="Rouge"/> Rouge<br>
+<input name="C" type="radio" value="Jaune"/> Jaune<br>
+<input name="C" type="radio" value="Bleue"/> Bleue<br>
 </p>
+
+<p>Anniversaire* : <input name="B" type="date" placeholder="JJ/MM/YYYY" required /></p>
+
 <p><input type="submit" value="Envoyer" />
-<input type="reset"/>
 </p>
-
+</fieldset>
 
 </form>
 
