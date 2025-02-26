@@ -86,6 +86,53 @@
         <tr>
         </tr>
     </table>
+
+    <h1>Exercice 3</h1>
+
+    <h2>Formulaire Mozilla Firefox</h2>
+    <form action="#" method="post">
+        <label for="pseudo">Votre pseudo :</label>
+        <input type="text" id="pseudo" name="pseudo" required><br><br>
+
+        <label for="motdepasse">Votre mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse" required><br><br>
+
+        <label for="confirmermdp">Ressaisir le mot de passe :</label>
+        <input type="password" id="confirmermdp" name="confirmermdp" required><br><br>
+
+        <label>OS préféré :</label><br>
+        <input type="radio" id="windowsxp" name="os_prefere" value="Windows XP">
+        <label for="windowsxp">Windows XP</label><br>
+        <input type="radio" id="windowsvista" name="os_prefere" value="Windows Vista">
+        <label for="windowsvista">Windows Vista</label><br>
+        <input type="radio" id="macosx" name="os_prefere" value="MacOS X">
+        <label for="macosx">MacOS X</label><br>
+        <input type="radio" id="linux" name="os_prefere" value="Linux">
+        <label for="linux">Linux</label><br>
+        <input type="radio" id="autres" name="os_prefere" value="Autres">
+        <label for="autres">Autres</label><br><br>
+
+        <label>Vous possédez :</label><br>
+        <input type="checkbox" id="ordinateurportable" name="possession[]" value="Ordinateur portable">
+        <label for="ordinateurportable">Ordinateur portable</label><br>
+        <input type="checkbox" id="portable" name="possession[]" value="Portable">
+        <label for="portable">Portable</label><br>
+        <input type="checkbox" id="netbook" name="possession[]" value="Netbook">
+        <label for="netbook">Netbook</label><br>
+        <input type="checkbox" id="tablette" name="possession[]" value="Tablette">
+        <label for="tablette">Tablette</label><br><br>
+
+        <label for="statut">Votre statut :</label><br>
+        <select id="statut" name="statut">
+            <option value="Chomeur">Chômeur</option>
+            <option value="Etudiant">Étudiant</option>
+            <option value="Fonctionnaire">Fonctionnaire</option>
+            <option value="Prive">Privé</option>
+            <option value="Retraite">Retraité</option>
+        </select><br><br>
+
+        <button type="submit">S'inscrire!</button>
+    </form>
 </body>
 
 
