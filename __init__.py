@@ -25,6 +25,10 @@ def exo1():
 def exo2():
     return render_template('exercice2.html')
 
+@app.route("/exercice_base3/")
+def exo3():
+    return render_template('exercice3.html')
+
 @app.route("/cnam/")
 def cnam():
     return render_template('cnam.html')
