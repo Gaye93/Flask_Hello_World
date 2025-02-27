@@ -53,6 +53,10 @@ def valletSVG():
 def chenilleSVG():
     return render_template('exercice_3_SVG.html')
 
+@app.route("/carre/")
+def carreCSS():
+    return render_template('CSS_Carre.html')
+
 @app.route("/cnam/")
 def cnam():
     return render_template('cnam.html')
