@@ -41,6 +41,10 @@ def form():
 def exempleSVG():
     return render_template('Exemple_Base_SVG.html')
 
+@app.route("/maison/")
+def maisonSVG():
+    return render_template('exercice_1_SVG.html')
+
 @app.route("/cnam/")
 def cnam():
     return render_template('cnam.html')
