@@ -37,6 +37,10 @@ def tp():
 def form():
     return render_template('formulaire.html')
 
+@app.route("/exemple_base/")
+def exempleSVG():
+    return render_template('Exemple_base_SVG.html')
+
 @app.route("/cnam/")
 def cnam():
     return render_template('cnam.html')
