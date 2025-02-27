@@ -39,7 +39,7 @@ def form():
 
 @app.route("/exemple_base/")
 def exempleSVG():
-    return render_template('Exemple_base_SVG.html')
+    return render_template('Exemple_Base_SVG.html')
 
 @app.route("/cnam/")
 def cnam():
