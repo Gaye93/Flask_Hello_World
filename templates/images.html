@@ -18,6 +18,26 @@ function controler(){
 	else{alert("Bouton option NON coché");}		
 }
 
+function img(){
+	if(document.getElementById('choix1').checked){
+		document.getElementById('image1').innerHTML = "<img src='../static/images1.jpg' alt='Image 1' width='150'>";
+	} else {
+		document.getElementById('image1').innerHTML = "";
+	}
+
+	if(document.getElementById('choix2').checked){
+		document.getElementById('image2').innerHTML = "<img src='../static/image2.jpg' alt='Image 2' width='150'>";
+	} else {
+		document.getElementById('image2').innerHTML = "";
+	}
+
+	if(document.getElementById('choix3').checked){
+		document.getElementById('image3').innerHTML = "<img src='../static/image3.jpg' alt='Image 3' width='150'>";
+	} else {
+		document.getElementById('image3').innerHTML = "";
+	}
+}
+
 </script>
 </head>
 <body>
@@ -32,6 +52,17 @@ function controler(){
 <hr/>
 <p>Option<input type="checkbox" id="Control"></p>
 <button onclick="controler()">Check</button>
+
+
+<hr><h2>Images à afficher?</h2>
+<input type="checkbox" id="choix1"> Image 1<br/>
+<div id="image1"></div> 
+<input type="checkbox" id="choix2"> Image 2<br/>
+<div id="image2"></div>
+<input type="checkbox" id="choix3"> Image 3<br/>
+<div id="image3"></div> 
+<br/>
+<button onclick="img()">Afficher</button>
 
 
 </body>
