@@ -49,6 +49,10 @@ def maisonSVG():
 def valletSVG():
     return render_template('exercice_2_SVG.html')
 
+@app.route("/etoiles/")
+def etoiles():
+    return render_template('Carre_Etoiles.html')
+
 @app.route("/chenille/")
 def chenilleSVG():
     return render_template('exercice_3_SVG.html')
