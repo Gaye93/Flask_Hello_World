@@ -8,26 +8,9 @@ function afficher(){
 	var saisie = parseInt(document.getElementById('V1').value);
 	var resultat = "";	
 		
-	for (j=0; j<saisie ; j++){
-                for (m=0; m<saisie - j - 1; m++){
-                        resultat += "&nbsp;";
+	for (j=0; j<=10 ; j++){
+                resultat += saisie + "x " + j + " = " + saisie*j + "<br>";
                 }
-                for (i=0; i<j + 1 ; i++){ 
-                        resultat += "**"; 
-                }
-                        resultat += "</br>";
-                }
-                
-        for (j=saisie - 1; j>=0; j--){
-                for (m=0; m<saisie - j - 1; m++){
-                        resultat += "&nbsp;";
-                }
-                for (i=0; i<j + 1; i++){ 
-                        resultat += "**"; 
-                }
-                resultat += "</br>";
-                }
-	
 	document.getElementById('result').innerHTML = resultat;
 
 }
@@ -36,7 +19,7 @@ function afficher(){
 
 </head>
 <body>
-<h1>Les étoiles</h1>
+<h1>Les Etoiles</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
 <button onclick="afficher()">Afficher</button>
 <div id="result"></div>
