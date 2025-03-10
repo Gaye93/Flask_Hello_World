@@ -68,6 +68,10 @@ def cnam():
 @app.route("/cv/")
 def monCV():
     return render_template('cv.html')
+
+@app.route("/images/")
+def img():
+    return render_template('images.html')
   
   
 @app.route('/calcul_carre/<int:val_user>')
